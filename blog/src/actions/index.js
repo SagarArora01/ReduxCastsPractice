@@ -6,9 +6,9 @@ const ApiKey = 'Paperclip321';
 
 export function fetchPosts(){
     
-    const request = axios.get(`${RootUrl}/posts?Key-${ApiKey}`)
-
+    const request = Axios.get(`${RootUrl}/posts?Key-${ApiKey}`); 
     console.log (request);
+
     return {
         type : FetchPosts,
         payload : request 
