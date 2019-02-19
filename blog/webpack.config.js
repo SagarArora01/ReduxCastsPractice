@@ -15,11 +15,13 @@ module.exports = {
           presets: ["react", "es2015", "stage-1"]
         }
       }
-    ]
+    ],
+    devtool: 'inline-source-map',
   },
   resolve: {
     extensions: ["", ".js", ".jsx"]
   },
+  devtool: "source-map",
   devServer: {
     historyApiFallback: true,
     contentBase: "./"
